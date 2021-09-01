@@ -1,3 +1,5 @@
+vendor
+
 *.exe
 *.zip
 *.tar.gz

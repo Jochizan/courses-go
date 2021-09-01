@@ -8,7 +8,7 @@ func main() {
 	m["Joan"] = 14
 	m["Pepe"] = 20
 
-	fmt.Println(m)
+	fmt.Println(m["Joser"])
 
 	// Recorrer map
 	for i, v := range m {
