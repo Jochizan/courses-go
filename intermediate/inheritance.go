@@ -2,23 +2,23 @@ package main
 
 import "fmt"
 
-type Person struct {
-	age int
-	name string
-}
+/*type Person struct {*/
+	/*age int*/
+	/*name string*/
+/*}*/
 
-type Employee struct {
-	id int
-}
+/*type Employee struct {*/
+	/*id int*/
+/*}*/
 
-type FullTimeEmployee struct {
-	Person
-	Employee
-}
+/*type FullTimeEmployee struct {*/
+	/*Person*/
+	/*Employee*/
+/*}*/
 
-func GetMessage(p Person) {
-	fmt.Printf("%s with age %d\n", p.name, p.age)
-}
+/*func GetMessage(p Person) {*/
+	/*fmt.Printf("%s with age %d\n", p.name, p.age)*/
+/*}*/
 
 func (employee FullTimeEmployee) String() string {
 	return fmt.Sprintf("\nid: %d, name: %s, age: %d ", employee.id, employee.name, employee.age)
