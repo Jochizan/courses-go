@@ -1,11 +1,11 @@
-package mypackage
+package utils
 
 import "fmt"
 
 // CarPublic Car con acceso publico
 type CarPublic struct {
 	Brand string
-	year 	int
+	year  int
 }
 
 type carPrivate struct {
