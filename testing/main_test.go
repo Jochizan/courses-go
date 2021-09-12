@@ -1,6 +1,7 @@
 package main
 
 import "testing"
+import "fmt"
 
 func TestSum(t *testing.T) {
 	tables := []struct {
@@ -38,6 +39,24 @@ func TestMax(t *testing.T) {
 		max := GetMax(table.x, table.y)
 		if max != table.r {
 			t.Errorf("Max(%d, %d) was incorrect, got: %d, want: %d.", table.x, table.y, max, table.r)
+		}
+	}
+}
+
+func TestFib(t *testing.T) {
+	tables := []struct {
+		a int
+		n int
+	}{
+		{1, 1},
+		{8, 21},
+		{50, 12586269025},
+	}
+
+	for _, item := range tables {
+		fib := Fibonacci(item.a)
+		if fib != item.n {
+			t.Errorf("Fibonacci was incorrect, got: %d, want: %d", fib, item.n)
 		}
 	}
 }
