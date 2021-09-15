@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"sync"
-	"time"
 )
 
 // c := [][]
@@ -26,12 +25,12 @@ func main() {
 
 }
 
-func doSomething(i int, wg *sync.WaitGroup, c chan int) {
-	defer wg.Done()
+// func doSomething(i int, wg *sync.WaitGroup, c chan int) {
+// 	defer wg.Done()
 
-	fmt.Printf("id: %d started \n", i)
-	time.Sleep(4 * time.Second)
-	fmt.Printf("id: %d finished \n", i)
+// 	fmt.Printf("id: %d started \n", i)
+// 	time.Sleep(4 * time.Second)
+// 	fmt.Printf("id: %d finished \n", i)
 
-	<-c
-}
+// 	<-c
+// }

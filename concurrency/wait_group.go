@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"sync"
-	"time"
 )
 
 func main() {
@@ -18,10 +16,10 @@ func main() {
 	wg.Wait()
 }
 
-func doSomething(i int, wg *sync.WaitGroup) {
-	defer wg.Done()
+// func doSomething(i int, wg *sync.WaitGroup) {
+// 	defer wg.Done()
 
-	fmt.Printf("Started %d\n", i)
-	time.Sleep(time.Duration(2) * time.Second)
-	fmt.Printf("Done: %d\n", i)
-}
+// 	fmt.Printf("Started %d\n", i)
+// 	time.Sleep(time.Duration(2) * time.Second)
+// 	fmt.Printf("Done: %d\n", i)
+// }
